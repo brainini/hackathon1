@@ -44,7 +44,7 @@ export function ProjectCard({
       <div className={cn("flex flex-1 flex-col gap-2 text-left", compact ? "p-3" : "p-4")}>
         <div className="flex items-center gap-2">
           <span className="rounded-full border-2 border-ink bg-ticket px-2 py-0.5 font-mono text-[11px] font-bold leading-none">
-            No.{formatSerial(candidate.entryNo)}
+            {formatSerial(candidate.entryNo)}
           </span>
         </div>
         <h3 className={cn("font-display leading-tight break-keep", compact ? "text-lg" : "text-xl")}>
